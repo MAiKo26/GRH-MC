@@ -1,7 +1,9 @@
 # WindowsAppGRH-MC
- Application Windows GRH-MC
+
+A Windows Form application was done as part of my Final Graduation University Project where I did a Windows and Android Application for Media Concept for a Human Ressource management module.
 
 
-This Application was done as part of my Final Graduation University Project where I did a Windows and Android Application for Media Concept for a Human Ressource management module.
+# What I Learned
 
-This Repository is about the Windows Application.
+* .NET Visual Basic
+* Visual Studio IDE
