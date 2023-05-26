@@ -1,0 +1,308 @@
+
+\chapter{Étude conceptuelle}
+
+
+\section{Introduction}
+
+L'étape de conception constitue un pont entre la définition de besoins et l'implémentation. Pour la conception, nous avons choisi de la modéliser en s'appuyant sur le formalisme UML qui offre une flexibilité marquante et s'exprime par l'utilisation des diagrammes.
+
+
+\section{Diagramme de classe}
+
+Le diagramme de classe décrit l'aspect statique des composants qui fait partie du système et ces relations.
+
+
+La figure 3.1 représente le diagramme de classe de notre système :
+
+\medskip
+\medskip
+
+\begin{itemize}
+\item \textbf{Classe Mission} : Cette classe permet au Responsable de GRH de gérer les missions et elle contient l'identifiant code mission et les attributs libelle, type, info1, info2 et info3. 
+\medskip
+\medskip
+\item \textbf{Classe Partenaire}: Cette classe permet au Responsable de GRH de gérer les partenaires et elle contient l'identifiant code partenaire et les attributs type, adresse, nom, mobile, telephone, ville, pays, info1, info2 et info3. 
+\medskip
+\medskip
+\item \textbf{Classe association Mission Affectées} : Cette classe association permet au Responsable de GRH d'affecter des missions au employés de la société pour un partenaire à une date précis et elle contient heure depart, heure arrive, objet, adresse mission, prix unitaire, unite, info1, info2 et info3. 
+\medskip
+\medskip
+\item \textbf{Classe Employés} : Cette classe permet au Responsable de GRH de gérer les employés et elle contient l'identifiant code employe et les attributs nom et prenom. 
+
+\end{itemize}
+
+\medskip
+\medskip
+
+\begin{figure}[H]
+\vspace*{4cm}
+\hspace*{-1.2cm}
+\centering
+\includegraphics[width=18cm]{Diagrammes/Diagramme_Class}
+\caption{Diagramme de classe de notre solution}
+\end{figure}
+
+\vfill
+\newpage
+
+\section{Diagrammes de séquences}
+
+
+Le diagramme de séquences modélise les interactions soit entre les objets parmi eux ou entre objet et utilisateur, vu que ce diagramme représente l'aspect dynamique du système. \\
+
+Nous présentons dans cette section les diagrammes de séquences de chaque sous-cas d'utilisations.
+
+
+\medskip
+\medskip
+
+\subsection{Diagramme de séquence de cas d'utilisation "Gérer les missions"}
+
+\medskip
+\medskip
+
+
+Les diagrammes des figures 3.2, 3.3, 3.4, 3.5 et 3.6 décrit les scénario possible du cas d'utilisation "Gérer les missions" où nous pouvons Consulter, Ajouter, Modifier, Supprimer et Rechercher des missions.
+
+\bigskip
+\bigskip
+\bigskip
+\medskip
+\medskip
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Consulter les missions" }
+
+\bigskip
+\bigskip
+
+
+\begin{figure}[H]
+\vspace*{1cm}
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11.5cm]{Diagrammes/Sequence1_Consult}
+\caption{Diagramme de séquence de sous cas d'utilisation "Consulter les missions"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Ajouter mission" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence1_Ajout}
+\caption{Diagramme de séquence de sous cas d'utilisation "Ajouter mission"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Modifier mission" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence1_Modif}
+\caption{Diagramme de séquence de sous cas d'utilisation "Modifier mission"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Supprimer mission" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence1_Supp}
+\caption{Diagramme de séquence de sous cas d'utilisation "Supprimer mission"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Rechercher mission" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence1_Rech}
+\caption{Diagramme de séquence de sous cas d'utilisation "Rechercher mission"}
+\end{figure}
+
+
+
+\subsection{Diagramme de séquence de cas d'utilisation "Gérer les partenaires"}
+
+
+Les diagrammes des figures 3.7, 3.8, 3.9, 3.10 et 3.11 décrit les scénario possible du cas d'utilisation "Gérer les partenaires" où nous pouvons Consulter, Ajouter, Modifier, Supprimer et Rechercher des partenaires.
+
+\bigskip
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Consulter les partenaires" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11.5cm]{Diagrammes/Sequence2_Consult}
+\caption{Diagramme de séquence de sous cas d'utilisation "Consulter les partenaires"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Ajouter partenaire" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence2_Ajout}
+\caption{Diagramme de séquence de sous cas d'utilisation "Ajouter partenaire"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Modifier partenaire" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence2_Modif}
+\caption{Diagramme de séquence de sous cas d'utilisation "Modifier partenaire"}
+\end{figure}
+
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Supprimer partenaire" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence2_Supp}
+\caption{Diagramme de séquence de sous cas d'utilisation "Supprimer partenaire"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Rechercher partenaire" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence2_Rech}
+\caption{Diagramme de séquence de sous cas d'utilisation "Rechercher partenaire"}
+\end{figure}
+
+
+\subsection{Diagramme de séquence de cas d'utilisation "Gérer les missions affectées"}
+
+
+Les diagrammes des figures 3.12, 3.13, 3.14, 3.15 et 3.16 décrit les scénario possible du cas d'utilisation "Gérer les missions affectées" où nous pouvons Consulter, Ajouter, Modifier, Supprimer et Rechercher des missions affectées.
+
+\bigskip
+
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Consulter les missions affectées" }
+
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11.5cm]{Diagrammes/Sequence3_Consult}
+\caption{Diagramme de séquence de sous cas d'utilisation "Consulter les missions affectées"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Affecter nouvelle mission" }
+\begin{figure}[H]
+\vspace*{-0.5cm}
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence3_Ajout}
+\caption{Diagramme de séquence de sous cas d'utilisation "Affecter nouvelle mission"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Modifier mission affectée" }
+\begin{figure}[H]
+\vspace*{-0.5cm}
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence3_Modif}
+\caption{Diagramme de séquence de sous cas d'utilisation "Modifier mission affectée"}
+\end{figure}
+
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Supprimer mission affectée" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=10.5cm]{Diagrammes/Sequence3_Supp}
+\caption{Diagramme de séquence de sous cas d'utilisation "Supprimer mission affectée"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Rechercher mission affectée" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=10.5cm]{Diagrammes/Sequence3_Rech}
+\caption{Diagramme de séquence de sous cas d'utilisation "Rechercher mission affectée"}
+\end{figure}
+
+
+\subsection{Diagramme de séquence de cas d'utilisation "Gérer les employés"}
+
+
+Les diagrammes des figures 3.17, 3.18, 3.19, 3.20 et 3.21 décrit les scénario possible du cas d'utilisation "Gérer les employés" où nous pouvons Consulter, Ajouter, Modifier, Supprimer et Rechercher des employés.
+
+\bigskip
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Consulter les employés" }
+
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11.5cm]{Diagrammes/Sequence4_Consult}
+\caption{Diagramme de séquence de sous cas d'utilisation "Consulter les employés"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Ajouter employé" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence4_Ajout}
+\caption{Diagramme de séquence de sous cas d'utilisation "Ajouter employé"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Modifier employé" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence4_Modif}
+\caption{Diagramme de séquence de sous cas d'utilisation "Modifier employé"}
+\end{figure}
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Supprimer employé" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence4_Supp}
+\caption{Diagramme de séquence de sous cas d'utilisation "Supprimer employé"}
+\end{figure}
+
+\vfill
+\newpage
+
+\textbf{ Diagramme de séquence de sous cas d'utilisation "Rechercher employé" }
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=11cm]{Diagrammes/Sequence4_Rech}
+\caption{Diagramme de séquence de sous cas d'utilisation "Rechercher employé"}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\vfill 
+
+\section{Conclusion}
+
+La phase de conception est l'étape de base pour réaliser n'importe quel projet. Elle permet d'avoir une description détaillé de notre futur application. Par la suite, nous devons chercher les moyens et les outils à utiliser pour développer cette application, ce qui fait la première partie du chapitre suivant.
+
+
+\vfill 
+
+
+
+

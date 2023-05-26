@@ -1,0 +1,1093 @@
+
+\chapter{Étude des besoins}
+
+
+\section{Introduction}
+
+L'étape de l'analyse des besoins est l'une des étapes les plus importantes à considérer.
+
+\smallskip
+
+En effet, si les besoins sont mal spécifiés et exprimés, ou mal analysés, toute la suite sera mal traitée, d'où l'importance accordée à cette activité. 
+
+\smallskip
+
+Dans cette partie notre objectif est de présenter les fonctionnalités estimé du futur application à développer. 
+
+\bigskip
+
+
+\section{Spécification des besoins}
+
+Pour assurer la réussite de notre projet, il est essentiel que nous parvenions à une vue claire des différentes besoins escomptés de notre application.
+
+\medskip
+\medskip
+
+Nous présentons dans ce qui suit tout les besoins fonctionnels et non fonctionnels.
+
+
+\bigskip
+
+\subsection{Besoins fonctionnels}
+
+L'application à développer doit assurer les fonctionnalités suivantes : 
+
+\medskip
+\medskip
+
+\begin{itemize}
+\item \textbf{ Gérer les missions :}
+\medskip
+\medskip
+\begin{itemize} \item Consultation des missions \item Ajout des nouveaux missions \item Modification des missions existantes \item Supprimer des missions existantes \item Rechercher des missions par Code, Libellé ou Type  \end{itemize}
+\medskip
+\item \textbf{ Gérer les partenaires : }
+\medskip
+\medskip
+\begin{itemize} \item Consultation des partenaires \item Ajout des nouveaux partenaires \item Modification des partenaires existantes \item Supprimer des partenaires existantes \item Rechercher des partenaires par Nom, Adresse ou Ville  \end{itemize}
+\medskip
+\item \textbf{ Gérer les missions affectées : }
+\medskip
+\medskip
+\begin{itemize} \item Consultation des missions affectées \item Ajout des nouveaux missions affectées \item Modification des missions affectées existantes \item Supprimer des missions affectées existantes \item Rechercher des missions affectées par Code employé, Code partenaire, Code mission ou Date du mission  \end{itemize}
+\medskip
+\item \textbf{ Gérer les employés : }
+\medskip
+\medskip
+ \begin{itemize} \item Consultation des employés \item Ajout des nouveaux employés \item Modification des employés existantes \item Supprimer des employés existantes \item Rechercher des employés par Code employé \end{itemize}
+
+\end{itemize}
+
+
+\subsection{Besoins non fonctionnels}
+
+\begin{itemize}
+\item \textbf{La convivialité :}
+C'est la point la plus important que nous nous concentrons sur pour se différencier d'autres applications et c'est de présenter une interface compréhensible, intuitif, simple et facile à manipuler pour nous permettra d'accroitre la rentabilité et l'efficacité de notre système.
+\medskip
+\item \textbf{La Disponibilité :}
+Le système doit être disponible à tout moment pour l'utilisateur.
+\medskip
+\item \textbf{La Performance et la capacité :}
+Le système doit avoir un temps de réponse et traitement rapide ainsi qu'une capacité de stockage assez grand pour gérer les missions.
+\end{itemize}
+
+
+\subsection{Identification des acteurs}
+
+L'acteur est le rôle assumé par un élément externe qui interagit avec le système étudié. Et pour notre application nous avons un seul acteur qui est le Responsable GRH (Gestion Ressource Humaines). Ce dernier a tous les droits d'accès à l'application. 
+
+\medskip
+
+Il peut gérer les missions, les partenaires, les missions affectées et les employés.
+
+
+\section{Diagramme de cas d'utilisation}
+\medskip
+\subsection{Diagramme de cas d'utilisation général}
+
+\bigskip
+\bigskip
+Le diagramme de cas d'utilisation, présenté par la Figure 2.1 est destiné à représenter les besoins d'utilisateur par rapport au système. Il constitue un des diagrammes les plus structurantes dans l'analyse d'un système. Chaque cas d'utilisation (use case) englobe une séquence d'actions réalisée par le système pour produire un résultat pour l'acteur.
+
+\medskip
+
+Mais vu que le diagramme complet sera trop chargé et compliqué, nous avons le divisé dans des diagrammes spécifiques et un diagramme du cas d'utilisation général.
+
+\medskip
+
+Dans ce diagramme l'acteur "Responsable GRH" a le droit d'accès à tout les modules de notre application "Gérer les Missions, "Gérer les Partenaires", "Gérer les Missions affectées" et "Gérer les Employés". 
+
+
+\bigskip
+\bigskip
+
+
+\begin{figure}[H]
+\vspace*{3cm}
+\hspace*{-1cm}
+\centering
+\includegraphics[scale=1]{Diagrammes/Diagramme1_General}
+\caption{Diagramme Général de GRH-MC}
+\end{figure}
+
+
+\vfill
+\newpage	
+
+
+\subsection{Diagramme de cas d'utilisation "Gérer les Missions"}
+
+\bigskip
+\bigskip
+
+La figure 2.2 représente le diagramme des sous cas d'utilisation du cas d'utilisation "Gérer les missions". Ce cas nous permet de consulter, ajouter, supprimer, modifier et rechercher les missions de l'organisation.
+
+\bigskip
+\bigskip
+
+\begin{figure}[htbp]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=18cm]{Diagrammes/Diagramme2_GererMissions}
+\caption{Diagramme spécifique de "Gérer les missions"}
+\end{figure}
+
+
+\vfill
+\newpage
+
+
+
+\subsection{Diagramme de cas d'utilisation "Gérer les Partenaires"}
+
+\bigskip
+\bigskip
+
+La figure 2.3 représente le diagramme des sous cas d'utilisation du cas d'utilisation "Gérer les Partenaires". Ce cas nous permet de consulter, ajouter, supprimer, modifier et rechercher les partenaires de l'organisation.
+
+\bigskip
+\bigskip
+
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=18cm]{Diagrammes/Diagramme4_GererPartenaire}
+\caption{Diagramme spécifique de "Gérer les Partenaires"}
+\end{figure}
+
+
+\vfill
+\newpage
+
+\subsection{Diagramme de cas d'utilisation "Gérer les missions affectées"}
+
+\bigskip
+\bigskip
+
+La figure 2.4 représente le diagramme des sous cas d'utilisation du cas d'utilisation "Gérer les missions affectées". Ce cas nous permet de consulter, ajouter, supprimer, modifier et rechercher les missions affectées au employés de l'organisation.
+
+\bigskip
+\bigskip
+
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=18cm]{Diagrammes/Diagramme3_GererMissionAffecte}
+\caption{Diagramme spécifique de "Gérer les missions affectées"}
+\end{figure}
+
+\vfill
+\newpage
+
+
+\subsection{Diagramme de cas d'utilisation "Gérer les Employés"}
+
+\bigskip
+\bigskip
+
+La figure 2.5 représente le diagramme des sous cas d'utilisation du cas d'utilisation "Gérer les Employés". Ce cas nous permet de consulter, ajouter, supprimer, modifier et rechercher les employés de l'organisation.
+
+\bigskip
+\bigskip
+
+
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\centering
+\includegraphics[width=18cm]{Diagrammes/Diagramme5_GererEmploye}
+\caption{Diagramme spécifique de "Gérer les Employés"}
+\end{figure}
+
+\vfill
+\newpage
+
+\section{Description textuelle des cas d'utilisation}
+
+\subsection{Description Textuelle du cas d'utilisation "Gérer les missions" }
+
+
+\textbf{ Description du sous cas d'utilisation "Consulter les missions" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Consulter les missions \\
+\hline
+\textbf{Résumé} & L'utilisateur consulte les missions \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage des missions \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Consulter les missions"  }
+\label{tab:Description du sous cas d'utilisation "Consulter les missions"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur peut consulter les missions & 1- Le système affiche la liste des missions \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Consulter les missions" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Consulter les missions"}
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du sous cas d'utilisation "Ajouter mission" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Ajouter mission \\
+\hline
+\textbf{Résumé} & L'utilisateur ajoute les nouveaux missions \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Mission ajouté \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Ajouter mission"  }
+\label{tab:Description dusous  cas d'utilisation "Ajouter mission"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Ajouter mission. & 2- Le système affiche l'interface pour ajouter une mission. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et ajoute la mission. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Ajouter mission" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Ajouter mission" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\vfill
+\newpage
+
+\textbf{ Description du cas d'utilisation "Modifier les missions" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Modifier mission \\
+\hline
+\textbf{Résumé} & L'utilisateur modifie une mission \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Mission modifié \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Modifier mission"  }
+\label{tab:Description dusous  cas d'utilisation "Modifier mission"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Modifier mission. & 2- Le système affiche l'interface de modification du mission. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et enregistre la mission. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Modifier mission" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Modifier mission" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\textbf{ Description du cas d'utilisation "Supprimer les missions" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Supprimer mission \\
+\hline
+\textbf{Résumé} & L'utilisateur supprime une mission existante \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Mission Supprimé \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Supprimer mission"  }
+\label{tab:Description dusous  cas d'utilisation "Supprimer mission"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Supprimer mission. & 2- Le système affiche l'interface de suppression du mission. \\
+3- L'utilisateur donne le code du mission à supprimer. & 4- Le système supprime la mission. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Supprimer mission" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Supprimer mission" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\vfill
+\newpage
+
+\textbf{ Description du cas d'utilisation "Rechercher les missions" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Rechercher mission \\
+\hline
+\textbf{Résumé} & L'utilisateur recherche une mission \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage de résultat de recherche \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Rechercher mission"  }
+\label{tab:Description dusous  cas d'utilisation "Rechercher mission"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur choisit l'option Rechercher mission. & 1- Le système affiche l'interface pour rechercher une mission. \\
+3- L'utilisateur choisie les critère de recherche. & 4- Le système affiche la résultat de recherche. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Rechercher mission" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Rechercher mission" }
+\end{table}
+
+
+
+
+\subsection{Description du cas d'utilisation "Gérer les Partenaires" }
+
+
+\textbf{ Description du sous cas d'utilisation "Consulter les Partenaires" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Consulter les partenaires \\
+\hline
+\textbf{Résumé} & L'utilisateur consulte les missions \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage des missions \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Consulter les Partenaires"  }
+\label{tab:Description du sous cas d'utilisation "Consulter les Partenaires"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur peut consulter les partenaires & 1- Le système affiche la liste des partenaires \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Consulter les Partenaires" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Consulter les Partenaires"}
+\end{table}
+
+\bigskip
+\bigskip
+
+
+
+\textbf{ Description du sous cas d'utilisation "Ajouter partenaire" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Ajouter partenaire \\
+\hline
+\textbf{Résumé} & L'utilisateur ajoute les nouveaux partenaires \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Partenaire ajouté \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Ajouter partenaire"  }
+\label{tab:Description dusous  cas d'utilisation "Ajouter partenaire"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Ajouter partenaire. & 2- Le système affiche l'interface pour ajouter un partenaire. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et ajoute le partenaire. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Ajouter partenaire" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Ajouter partenaire" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Modifier les Partenaires" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Modifier partenaire \\
+\hline
+\textbf{Résumé} & L'utilisateur modifie un partenaire \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Partenaire modifié \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Modifier partenaire"  }
+\label{tab:Description dusous  cas d'utilisation "Modifier partenaire"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Modifier partenaire. & 2- Le système affiche l'interface de modification du partenaire. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et enregistre le partenaire. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Modifier partenaire" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Modifier partenaire" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Supprimer les Partenaires" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Supprimer partenaire \\
+\hline
+\textbf{Résumé} & L'utilisateur supprime un partenaire existante \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Partenaire Supprimé \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Supprimer partenaire"  }
+\label{tab:Description dusous  cas d'utilisation "Supprimer partenaire"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Supprimer partenaire. & 2- Le système affiche l'interface de suppression du partenaire. \\
+3- L'utilisateur donne le code du partenaire à supprimer. & 4- Le système supprime le partenaire. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Supprimer partenaire" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Supprimer partenaire" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Rechercher les Partenaires" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Rechercher partenaire \\
+\hline
+\textbf{Résumé} & L'utilisateur recherche un partenaire \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage de résultat de recherche \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Rechercher partenaire"  }
+\label{tab:Description dusous  cas d'utilisation "Rechercher partenaire"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur choisit l'option Rechercher partenaire. & 1- Le système affiche l'interface pour rechercher un partenaire. \\
+3- L'utilisateur choisie les critère de recherche. & 4- Le système affiche la résultat de recherche. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Rechercher partenaire" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Rechercher partenaire" }
+\end{table}
+
+
+\subsection{Description du cas d'utilisation "Gérer les missions affectées" }
+
+
+\textbf{ Description du sous cas d'utilisation "Consulter les missions affectées" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Consulter les missions affectées \\
+\hline
+\textbf{Résumé} & L'utilisateur consulte les missions affectées \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage des missions affectées \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Consulter les missions affectées"  }
+\label{tab:Description du sous cas d'utilisation "Consulter les missions affectées"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur peut consulter les missions affectées & 1- Le système affiche la liste des missions affectées \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Consulter les missions affectées" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Consulter les missions affectées"}
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du sous cas d'utilisation "Affecter une nouvelle mission" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Affecter une nouvelle mission \\
+\hline
+\textbf{Résumé} & L'utilisateur affecte une nouvelle mission \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Mission affecté \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Affecter une nouvelle mission"  }
+\label{tab:Description dusous  cas d'utilisation "Affecter une nouvelle mission"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Affecter mission. & 2- Le système affiche l'interface affectation du mission. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et affecte la mission. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Affecter une nouvelle mission" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Affecter une nouvelle mission" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Modifier mission affectée" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Modifier une mission affectée \\
+\hline
+\textbf{Résumé} & L'utilisateur modifie une mission affectée \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Mission affectée modifié \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Modifier mission affecté"  }
+\label{tab:Description dusous  cas d'utilisation "Modifier mission affecté"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Modifier mission affectée. & 2- Le système affiche l'interface de modification du mission affectée. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et enregistre la mission affectée. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Modifier mission affectée" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Modifier mission affectée" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Supprimer mission affectée" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Supprimer mission affectée \\
+\hline
+\textbf{Résumé} & L'utilisateur supprime une mission affectée existante \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & mission affectée supprimé \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Supprimer mission affectée"  }
+\label{tab:Description dusous  cas d'utilisation "Supprimer mission affectée"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Supprimer mission affectée. & 2- Le système affiche l'interface de suppression du mission affectée. \\
+3- L'utilisateur donne le code du mission, le code d'employé, le code du partenaire et la date du mission affectée pour la supprimer. & 4- Le système supprime la mission affectée. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Supprimer mission affectée" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Supprimer mission affectée" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Rechercher mission affectée" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Rechercher une mission affectée \\
+\hline
+\textbf{Résumé} & L'utilisateur recherche une mission affectée \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage de résultat de recherche \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Rechercher une mission affectée"  }
+\label{tab:Description dusous  cas d'utilisation "Rechercher une mission affectée"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur choisit l'option Rechercher mission affectée. & 1- Le système affiche l'interface pour rechercher une mission affectée. \\
+3- L'utilisateur choisie les critère de recherche. & 4- Le système affiche la résultat de recherche. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Rechercher une mission affectée" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Rechercher une mission affectée" }
+\end{table}
+
+
+\subsection{Description du cas d'utilisation "Gérer les Employés" }
+
+
+\textbf{ Description du sous cas d'utilisation "Consulter les employés" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Consulter les employés \\
+\hline
+\textbf{Résumé} & L'utilisateur consulte les employés \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage des employés \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Consulter les employés"  }
+\label{tab:Description du sous cas d'utilisation "Consulter les employés"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur peut consulter les employés & 1- Le système affiche la liste des employés \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Consulter les employés" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Consulter les employés"}
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du sous cas d'utilisation "Ajouter employé" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Ajouter employé \\
+\hline
+\textbf{Résumé} & L'utilisateur ajoute les nouveaux employés \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & employé ajouté \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Ajouter employé"  }
+\label{tab:Description dusous  cas d'utilisation "Ajouter employé"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Ajouter employé. & 2- Le système affiche l'interface d'ajout employé. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et ajoute l'employé. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Ajouter employé" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Ajouter employé" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\vfill
+\newpage
+
+\textbf{ Description du cas d'utilisation "Modifier les employés" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Modifier employé \\
+\hline
+\textbf{Résumé} & L'utilisateur modifie un employé \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & employé modifié \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Modifier employé"  }
+\label{tab:Description dusous  cas d'utilisation "Modifier employé"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Modifier employé. & 2- Le système affiche l'interface de modification du employé. \\
+3- L'utilisateur remplit le formulaire. & 4- Le système vérifie les données et enregistre l'employé. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Modifier employé" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Modifier employé" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{ Description du cas d'utilisation "Supprimer employé" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Supprimer employé \\
+\hline
+\textbf{Résumé} & L'utilisateur supprime un employé existante \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & employé supprimé \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Supprimer employé"  }
+\label{tab:Description dusous  cas d'utilisation "Supprimer employé"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+1- L'utilisateur choisit l'option Supprimer employé. & 2- Le système affiche l'interface de suppression du employé. \\
+3- L'utilisateur donne le code du employé à supprimer. & 4- Le système supprime l'employé. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Supprimer employé" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Supprimer employé" }
+\end{table}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\vfill
+\newpage
+
+\textbf{ Description du cas d'utilisation "Rechercher employé" }
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Titre} & Rechercher employé \\
+\hline
+\textbf{Résumé} & L'utilisateur recherche un employé \\
+\hline
+\textbf{Acteur} & Responsable GRH \\
+\hline
+\textbf{Pré Condition} & Application Installé et internet disponible \\
+\hline
+\textbf{Post Condition} & Affichage de résultat de recherche \\
+\hline
+\end{tabular}
+\caption{Description du sous cas d'utilisation "Rechercher employé"  }
+\label{tab:Description dusous  cas d'utilisation "Rechercher employé"}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{| p{0.35\linewidth} | p{0.6\linewidth} |}
+\hline
+\multicolumn{2}{|c|}{\textbf{Scénario nominal}}  \\
+\hline 
+\textbf{Acteurs} & \textbf{Système} \\
+\hline
+2- L'utilisateur choisit l'option Rechercher employé. & 1- Le système affiche l'interface pour rechercher un employé. \\
+3- L'utilisateur choisie les critère de recherche. & 4- Le système affiche la résultat de recherche. \\
+\hline
+\end{tabular}
+\caption{Scénario nominal du sous cas d'utilisation "Rechercher employé" }
+\label{tab:Scénario nominal du sous cas d'utilisation "Rechercher employé" }
+\end{table}
+
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+
+
+\section{Conclusion}
+
+Dans ce deuxième chapitre, nous avons amené les divers besoins non-fonctionnels et les besoins fonctionnels de notre système. Puis, nous avons réalisé une étude des différentes cas d'utilisation de notre application.
+
+\smallskip
+
+Ce chapitre a une importance critique surtout pour bien comprendre les besoins du notre client et pour l'étude conceptuelle qui est le prochain chapitre.
+
+\vfill 
+
+
+
+

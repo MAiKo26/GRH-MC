@@ -1,0 +1,364 @@
+
+\chapter{Réalisation}
+
+
+\section{Introduction}
+
+Ce chapitre est consacré à présenter les outils utilisés au cours de notre projet ainsi que les étapes d'implémentation.
+
+
+\section{Choix Techniques}
+
+\subsection{Visual Studio Community}
+
+Microsoft Visual Studio \cite{6} est une série de programmes développé par Microsoft.
+
+\medskip
+
+
+
+C'est une suite complète qui génère des applications grâce à ces divers outils de développement. Visual C\#, Visual Basic, Visual C++ exploitent tous l'IDE (Integrated Developement Environment) qui nous permettrons de distribuer les outils et simplifie la réalisation des solutions en utilisant les divers langages. 
+
+\medskip
+
+\begin{center}
+\includegraphics[scale=0.15]{Images/logovisualstudio}
+\end{center}
+
+
+\medskip
+
+Pour ce projet, nous avons utilisé la version Visual Studio Community 2019 avec la langage Visual Basic \cite{7} \cite{8} qui est connu pour ça structure simple et pratique pour le code exécutable.
+
+
+
+
+\subsection{Android Studio}
+
+Android Studio \cite{9} est un logiciel officiel conçu par Google en 2013 pour le développement des applications Android, basé sur l'IDE (Integrated Developement Environment) IntelliJ IDEA et disponible gratuitement à télécharger sous les systèmes d'exploitation Windows, macOS, Chrome OS et Linux.
+
+\medskip
+
+
+
+Ce logiciel permet en majorité d'éditer les fichier Java, Kotlin et XML d'une application Android.
+
+\medskip
+
+
+En plus du puissant code éditeur et des outils des développement, Android studio offre plus de fonctionnalités comme flexibilité de construction basé sur Gradle, un émulateur rapide et riche de fonctionnalités, des outils de test étendus, tous avantages qui améliorent la productivité quand nous construisons un projet Android apps.
+
+\medskip
+
+
+Pour notre projet, nous avons utilisé la version 4.1.3 \cite{10} avec le langage Java \cite{11}.
+
+
+
+
+
+\subsection{MySQL Workbench}
+
+MySQL Workbench \cite{12} \cite{13} est un logiciel de gestion et d'administration de bases de données MySQL crée en 2004, disponible sur Windows, Linux et MAC OS X.
+
+\medskip
+
+
+
+Ce logiciel nous permettra de la création, modification ou de la suppression des tables, des comptes et d'effectuer toutes les opérations de gestion d'une base de données grâce à son interface graphique qui est clair et facile à utilisé. 
+
+
+
+\subsection{Firebase Platform}
+
+Firabase \cite{14} est un site qui offre plusieurs divers services d'hébergement lancée en 2011 sous le nom "Envolve" par Andrew Lee et James Templin, puis le service est racheté par Google en octobre 2014 et mis désormais à la maison mère de Google : Alphabet.
+
+
+\medskip
+
+
+Toutes les implémentations et la gestion des serveurs de Firebase sont de la responsabilité exclusive d'Alphabet. Les applications utilisant Firebase intègrent une bibliothèque qui permet diverses interactions possibles.
+
+
+\medskip
+
+\begin{center}
+\vspace*{-0.5cm}
+\includegraphics[scale=0.2]{Images/logofirebase}
+\vspace*{-0.5cm}
+\end{center}
+
+
+\medskip
+
+
+Ce site aujourd'hui offre la possibilité d'héberger toute sorte type d'application (Android, iOS, JS, Node.js, Java, Unity, PHP, C++ etc..) aussi que d'autres fonctionnalités comme l'authentification sociale ou la sauvegarde des contenus dans des bases de données NoSQL ou temps réel \cite{15}.
+
+
+
+\medskip
+
+
+
+\medskip
+
+
+
+Pour notre projet nous utilisons la fonctionnalité d'hébergement dans une base de données en temps réel.
+
+\medskip
+
+
+
+\subsection{Photofiltre}
+
+Photofiltre est un logiciel d'édition d'image gratuit créé par Antonio Da Cruz. En plus du traitement d'image classique (recadrage, contraste, gamma, etc.), il dispose également de filtres pour améliorer et convertir les photos numériques.
+
+\medskip
+
+
+Photofiltre \cite{16} est la version gratuite du partagiciel Photofiltre Studio et nous avons choisi ce logiciel pour créer quelque parties du design comme l'icône d'application.
+
+
+\vfill
+\newpage
+
+\section{Présentation des interfaces graphiques}
+
+
+Vu que notre application est une partie d'une autre application, nous n'aurons pas d'authentification plutôt le premier interface qui s'affichera. C'est un interface d'accueil temporaire pour l'application Windows comme décrit la figure 4.1. 
+
+\begin{figure}[H]
+\vspace*{1cm}
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/Formaccueil}
+\caption{Interface Windows Form pour "L'accueil temporaire"}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Interface "Gérer les missions"}
+
+\bigskip
+
+La figure 4.2 illustre l'interface de l'application Windows pour gérer les missions où nous trouverons les quatre fonctionnalités de notre application Rechercher, Modifier, Supprimer et Ajouter une mission.
+
+\medskip
+
+\medskip
+
+
+Aussi, nous trouverons dans cette interface l'affichage de la liste des missions déjà ajoutées dans notre base de données.
+
+\bigskip
+
+
+\begin{figure}[H]
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/FormMission}
+\caption{Interface Windows Form pour "Gérer les missions"}
+\end{figure}
+
+\bigskip
+
+La figure 4.3 nous montre l'affichage des missions dans notre application mobile et si nous sélectionnerons l'une des cases nous aurons plus de détail comme la figure 4.4 le montre.
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppMission}
+\caption{Interface de l'application mobile pour "Consulter les missions"}
+\end{figure}
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppDetailMission}
+\caption{Interface de l'application mobile pour "Consulter les détails d'une mission"}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+
+
+\subsection{Interface "Gérer les partenaires"}
+
+\bigskip
+
+La figure 4.5 illustre l'interface de l'application Windows pour gérer les missions où nous trouverons les quatre fonctionnalités Rechercher, Modifier, Supprimer et Ajouter un partenaire.
+
+\medskip
+
+\medskip
+
+
+Aussi, nous trouverons dans cette interface l'affichage de la liste des partenaires déjà ajoutés dans notre base de données.
+
+\bigskip
+
+\begin{figure}[H]
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/FormPartenaire}
+\caption{Interface Windows Form pour "Gérer les partenaires"}
+\end{figure}
+
+\bigskip
+
+La figure 4.6 nous montre l'affichage des partenaires dans notre application mobile et si nous sélectionnerons l'une des cases nous aurons plus de détail comme la figure 4.7 le montre.
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppPartenaire}
+\caption{Interface de l'application mobile pour "Consulter les partenaires"}
+\end{figure}
+
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppDetailPartenaire}
+\caption{Interface de l'application mobile pour "Consulter les détails d'un partenaire"}
+\end{figure}
+
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Interface "Gérer les missions affectées"}
+
+\bigskip
+
+La figure 4.8 illustre l'interface de l'application Windows pour gérer les missions affectées où nous trouverons les quatre fonctionnalités Rechercher, Modifier, Supprimer et Ajouter un partenaire.
+
+\medskip
+
+\medskip
+
+
+Aussi, nous trouverons dans cette interface l'affichage de la liste des missions affectées dans notre base de données.
+
+\bigskip
+
+\begin{figure}[H]
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/FormMissionAffecte}
+\caption{Interface Windows Form pour "Gérer les missions affectées"}
+\end{figure}
+
+\bigskip
+
+La figure 4.9 nous montre l'affichage des missions affectées dans notre application mobile et si nous sélectionnerons l'une des cases nous aurons plus de détail comme la figure 4.10 le montre.
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppMissionAffecte}
+\caption{Interface de l'application mobile pour "Consulter missions affectées"}
+\end{figure}
+
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppDetailMissionAffecte}
+\caption{Interface de l'application mobile pour "Consulter les détails d'une mission affectée"}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Interface "Gérer les employés"}
+
+\bigskip
+
+La figure 4.11 illustre l'interface de l'application Windows pour gérer les missions affectées où nous trouverons les quatre fonctionnalités Rechercher, Modifier, Supprimer et Ajouter un employé.
+
+\medskip
+
+\medskip
+\medskip
+
+
+Aussi, nous trouverons dans cette interface l'affichage de la liste des employés affectées dans notre base de données avec un bouton "Affecté une mission" qui nous permettra de naviguer vers "Affecter une nouvelle mission" comme la figure 4.12 le montre.
+
+\bigskip
+
+\begin{figure}[H]
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/FormEmploye}
+\caption{Interface Windows Form pour "Gérer les employés"}
+\end{figure}
+
+
+\begin{figure}[H]
+\hspace*{-1.7cm}
+\centering
+\includegraphics[scale=0.55]{Images/FormNouvelleAffectation}
+\caption{Interface Windows Form pour "Affecter une nouvelle mission"}
+\end{figure}
+
+\bigskip
+
+La figure 4.13 nous montre l'affichage des employés dans notre application mobile.
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppEmploye}
+\caption{Interface Windows Form pour "Consulter les employés"}
+\end{figure}
+
+\bigskip
+\bigskip
+\bigskip
+
+
+\subsection{Interface de transition Application mobile}
+
+\bigskip
+
+La figure 4.14 illustre l'interface de transition dans notre application mobile.
+
+\bigskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{Images/AppTransition}
+\caption{Interface de transition Application mobile}
+\end{figure}
+
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+
+\section{Conclusion}
+
+Dans ce quatrième chapitre, nous avons présenté nos choix techniques pour l'application aussi les interfaces réalisées et implémentées dans notre projet soit pour l'application mobile ou l'application windows.
+
+
+\vfill 
+
+
+
+
