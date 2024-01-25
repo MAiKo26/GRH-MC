@@ -1,4 +1,4 @@
-# GRH-MC: Human Resources Management
+# GRH-MC: Human Resources Management Application
 
 ## Overview
 
